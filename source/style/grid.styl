@@ -1,0 +1,33 @@
+.grid {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+
+  height: 100%;
+
+  .pane {
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+
+  .cover.pane {
+    width: 30%;
+    background: no-repeat 0 url('./assets/bg.png');
+  }
+
+  .main.pane {
+    width: 62%;
+    min-width: 600px;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .third.pane {
+    background-color: #619B90;
+    max-width: 103px;
+    min-width: 103px;
+  }
+}

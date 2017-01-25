@@ -1,0 +1,108 @@
+#todoContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 250px;
+
+  .counter {
+    margin-left: 39px;
+
+    font-family: 'Ubuntu', sans-serif;
+    color: rgba(0,0,0,0.87);
+
+    flex-grow: 1;
+
+    h1 {
+      font-size: 50px;
+      font-weight: 500;
+      letter-spacing: 3.12px;
+
+      margin-bottom: 6px;
+    }
+
+    h2 {
+      font-size: 17px;
+      font-weight: 500;
+      letter-spacing: 1.12px;
+
+      margin-top: 0;
+    }
+
+    span.phrase {
+      display: block;
+
+      font-family: Ubuntu;
+      font-size: 14px;
+      letter-spacing: 0.93px;
+      line-height: 17px;
+    }
+
+    input[type="text"] {
+      display: block;
+      width: 100%;
+      margin-top: 13px;
+
+      font-family: Ubuntu;
+      font-size: 14px;
+      letter-spacing: 0.93px;
+      line-height: 17px;
+
+      border-color: transparent !important;
+      background-color: transparent !important;
+      padding: 0em !important;
+      box-shadow: none !important;
+      outline: none;
+    }
+  }
+
+  ul.list {
+    font-family: 'Ubuntu', sans-serif;
+    color: rgba(0,0,0,0.87);
+
+    min-width: 220px;
+    max-width: 250px;
+    padding: 0;
+    margin-right: 100px;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    flex-grow: 1;
+
+    li {
+      display: flex;
+
+      &:hover {
+        background-color: #FAFAFA;
+      }
+
+      list-style-type: none;
+      padding: 13px 0;
+
+      font-size: 15px;
+      letter-spacing: 0.93px;
+
+
+      &.done {
+        color: rgba(0,0,0,0.27);
+      }
+
+      &:hover i.icon {
+        display: inline-block;
+      }
+
+      .checkbox {
+        display: inline-block;
+        border: 1px solid rgba(0,0,0,0.20);
+        border-radius: 3px;
+        margin: auto 10px;
+        min-height: 13px;
+        max-height: 13px;
+        min-width: 13px;
+        max-width: 13px;
+      }
+    }
+  }
+}
